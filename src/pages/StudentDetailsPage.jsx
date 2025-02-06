@@ -9,8 +9,8 @@ function StudentDetailsPage() {
   // Find the current student profile by id.
   // In this case, the student with id 1. The `studentId` is hard-coded for now.
   // This could be a URL parameter from React Router, e.g. /students/:studentId
-  const { studentId } = useParams();
-  const studentProfile = studentsData.find((student) => student._id === studentId);
+  const { studentId } = useParams(); //implementamos el ID
+  const studentProfile = studentsData.find((student) => student._id === studentId);//Sacamos el Id dinámicamente
 
 
   return (
@@ -78,7 +78,7 @@ function StudentDetailsPage() {
             <button className="text-white px-4 py-2 rounded bg-green-500 hover:bg-green-600 transition duration-300 ease-in-out">
               Back
             </button>
-            </Link>
+            </Link> {/* cubrimos el botón con el link */}
           </>
         )}
       </div>
